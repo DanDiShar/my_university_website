@@ -1,4 +1,5 @@
 # my_university_website
+https://dandishar.github.io/my_university_website/
 Здравствуйте. Работа 2 курса 3 семестра по курсу "Фуллстэк разработка".
 Представляю вам список того, что включено в данный сайт
 1 Основы языка HTML
