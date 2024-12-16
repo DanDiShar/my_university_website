@@ -1,0 +1,17 @@
+/* Тетрадка 4 */
+
+.main-heading {
+    width: 10%;
+    font-family: "Times New Roman";
+    font-size: 15px;
+}
+
+.text-paragraph {
+    color: #2200ff;
+    margin-top: 10%;
+    padding: 10%;
+}
+
+.product-card {
+    /* Уже есть */
+}

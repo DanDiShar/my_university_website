@@ -1,0 +1,33 @@
+.table1 {
+	width: 40%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+.table1 th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table1 td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}
+
+.table2 {
+	width: 30%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse; 
+}
+.table2 th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+.table2 td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+}

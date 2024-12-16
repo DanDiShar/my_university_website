@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="9-11.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+</head>
+<body>
+    <div class="ggg">
+        <div><h1>Добро пожаловать 
+            на наш сайт</h1></div>
+        <div><h2>Это новый текст параграфа.</h2></div>
+        <div><h3>приветики</h3></div>
+        <li>
+            <div class="card" style="width: 18rem;">
+                <img src="orig.webp" class="card-img-top" alt="">
+                <div class="card-body">
+                    <p class="card-text">Корпоративный сайт</p>
+                    <button type="order" class="open-modal">заказать</button>
+                </div>
+            </div>
+        </li>
+    </div>  
+    
+
+    <div class="modal" id="modal">
+        <div class='modal-content'>
+            <div >
+                <span class="close">x</span>
+            </div>
+            <h3 id="modal-title">Разработка веб-приложения</h3>
+            <p>Заполните форму и перезвоним</p>
+            <div>
+                <div>
+                    <p>Как зовут</p>
+                    <label for="name"><input type="text" required ></label>
+                </div>
+                <div>
+                    <p>e-mail</p>
+                    <label for="email"><input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"></label>
+                </div>
+                <div>
+                    <p>Телефон</p>
+                    <label for="phone"><input type="text" id="phone-input" placeholder="Введите номер телефона"></label>
+                </div>
+                <div>
+                    <p>Страна</p>
+                    <label for="coutries">
+                    <select name="страны" id="страны">
+                        <option value="страна1">юэсэй</option>
+                        <option value="страна2" selected>Россия</option>
+                        <option value="страна3">чина</option>
+                    </select>
+                    </label>
+                </div>
+                <div>
+                    <p>Дата</p>
+                    <label for="date"><input type="date"></label>
+                </div>
+                <div>
+                    <p>Комментарий</p>
+                    <label for="comments"><textarea name="" id=""></textarea></label>
+                </div>
+            </div>
+            <p><input type="checkbox">Согласие на обработку данных</p>
+            <button class="aply">Отправить заявку</button>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="9-11.js"></script>
+</body>
+</html>

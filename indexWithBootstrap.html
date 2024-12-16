@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="winmodal2WithBstap.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="toptable">
+            <img src="img/favicon.ico" class="imgtop">
+
+            <div class="top">
+                <p class="top2">Группа: Эфбо-09-23</p>
+                <p>Шарипов Данис Эдуардович</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="indexWithBootstrap.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">Таблицы</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Тетрадки
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tet5.html">Тетрадь 5</a></li>
+                            <li><a class="dropdown-item" href="tet6.html">Тетрадь 6</a></li>
+                            <li><a class="dropdown-item" href="9-11.html">Тетрадь 9-11</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-2 leftbar nav">
+                <ul class="leftbar_ul">
+                    <li>
+                        Навигация по странице
+                    </li>
+                    <li>
+                        Фронт
+                    </li>
+                    <li>
+                        Бэк
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col justify-content-md-center">
+                <div class="card-group">
+                    <div class="card kartaBP">
+                        <img src="img/usluga4.jpg" class="card-img-top" alt="Фронтэнд и бэкенд">
+                        <div class="card-body">
+                            <h5 class="card-title">Услуга1</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <a href="#" class="btn btn-primary" id="openModal1">Нажми меня</a>
+                        </div>
+                    </div>
+                    <div class="card kartaBP">
+                        <img src="img/usluga4.jpg" class="card-img-top" alt="Фронтэнд и бэкенд">
+                        <div class="card-body">
+                            <h5 class="card-title">Услуга2</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                                content.</p>
+                            <a href="#" class="btn btn-primary" id="openModal2">Нажми меня</a>
+                        </div>
+                    </div>
+                    <div class="card kartaBP">
+                        <img src="img/usluga4.jpg" class="card-img-top" alt="Фронтэнд и бэкенд">
+                        <div class="card-body">
+                            <h5 class="card-title">Услуга3</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This card has even longer content than the first to show that equal
+                                height action.</p>
+                            <a href="#" class="btn btn-primary" id="openModal3">Нажми меня</a>
+
+                        </div>
+                    </div>
+
+                    <div class="modal" id="modal1">
+                        <div class='modal-content'>
+                            <div >
+                                <span class="close">x</span>
+                            </div>
+                            <h3 id="modal-title">Разработка веб-приложения</h3>
+                            <p>Заполните форму и перезвоним</p>
+                            <div>
+                                <div>
+                                    <p>Как зовут</p>
+                                    <label for="name"><input type="text" required ></label>
+                                </div>
+                                <div>
+                                    <p>e-mail</p>
+                                    <label for="email"><input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"></label>
+                                </div>
+                                <div>
+                                    <p>Телефон</p>
+                                    <label for="phone"><input type="text" id="phone-input" placeholder="Введите номер телефона"></label>
+                                </div>
+                                <div>
+                                    <p>Страна</p>
+                                    <label for="coutries">
+                                    <select name="страны" id="страны">
+                                        <option value="страна1">юэсэй</option>
+                                        <option value="страна2" selected>Россия</option>
+                                        <option value="страна3">чина</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div>
+                                    <p>Дата</p>
+                                    <label for="date"><input type="date"></label>
+                                </div>
+                                <div>
+                                    <p>Комментарий</p>
+                                    <label for="comments"><textarea name="" id=""></textarea></label>
+                                </div>
+                            </div>
+                            <p><input type="checkbox">Согласие на обработку данных</p>
+                            <button class="aply">Отправить заявку</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                    
+                    <div class="modal" id="modal2">
+                        <div class='modal-content'>
+                            <div >
+                                <span class="close">x</span>
+                            </div>
+                            <h3 id="modal-title">Разработка веб-приложения</h3>
+                            <p>Заполните форму и перезвоним</p>
+                            <div>
+                                <div>
+                                    <p>Как зовут</p>
+                                    <label for="name"><input type="text" required ></label>
+                                </div>
+                                <div>
+                                    <p>e-mail</p>
+                                    <label for="email"><input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"></label>
+                                </div>
+                                <div>
+                                    <p>Телефон</p>
+                                    <label for="phone"><input type="text" id="phone-input" placeholder="Введите номер телефона"></label>
+                                </div>
+                                <div>
+                                    <p>Страна</p>
+                                    <label for="coutries">
+                                    <select name="страны" id="страны">
+                                        <option value="страна1">юэсэй</option>
+                                        <option value="страна2" selected>Россия</option>
+                                        <option value="страна3">чина</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div>
+                                    <p>Дата</p>
+                                    <label for="date"><input type="date"></label>
+                                </div>
+                                <div>
+                                    <p>Комментарий</p>
+                                    <label for="comments"><textarea name="" id=""></textarea></label>
+                                </div>
+                            </div>
+                            <p><input type="checkbox">Согласие на обработку данных</p>
+                            <button class="aply">Отправить заявку</button>
+                        </div>
+                    </div><div class="modal" id="modal3">
+                        <div class='modal-content'>
+                            <div >
+                                <span class="close">x</span>
+                            </div>
+                            <h3 id="modal-title">Разработка веб-приложения</h3>
+                            <p>Заполните форму и перезвоним</p>
+                            <div>
+                                <div>
+                                    <p>Как зовут</p>
+                                    <label for="name"><input type="text" required ></label>
+                                </div>
+                                <div>
+                                    <p>e-mail</p>
+                                    <label for="email"><input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"></label>
+                                </div>
+                                <div>
+                                    <p>Телефон</p>
+                                    <label for="phone"><input type="text" id="phone-input" placeholder="Введите номер телефона"></label>
+                                </div>
+                                <div>
+                                    <p>Страна</p>
+                                    <label for="coutries">
+                                    <select name="страны" id="страны">
+                                        <option value="страна1">юэсэй</option>
+                                        <option value="страна2" selected>Россия</option>
+                                        <option value="страна3">чина</option>
+                                    </select>
+                                    </label>
+                                </div>
+                                <div>
+                                    <p>Дата</p>
+                                    <label for="date"><input type="date"></label>
+                                </div>
+                                <div>
+                                    <p>Комментарий</p>
+                                    <label for="comments"><textarea name="" id=""></textarea></label>
+                                </div>
+                            </div>
+                            <p><input type="checkbox">Согласие на обработку данных</p>
+                            <button class="aply">Отправить заявку</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-2 rightside">
+                <img src="img/spam.png" class="photo1">
+            </div>
+        </div>
+    </main>
+    </div>
+
+
+    <footer class="vk">
+        <p>&copy; 2024 Все права защищены.</p>
+        <ul class="social-links">
+            <a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img src="img/vk.png" alt="vkontakte"
+                    class="vk"></a>
+        </ul>
+
+    </footer>
+
+
+
+
+    <script src="func.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
